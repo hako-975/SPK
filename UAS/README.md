@@ -1,6 +1,4 @@
-# spk_web
-## Install, create and activate virtualenv
-https://medium.com/analytics-vidhya/virtual-environment-6ad5d9b6af59
+# UAS spk_web
 
 ## Install requirements
 
@@ -15,32 +13,31 @@ to run the web app simply  use
 Install postman 
 https://www.postman.com/downloads/
 
-get movie list
-<img src='img/get_movie.png' alt='movie list'/>
+get ponsel list
+<img src='img/get_ponsel.png' alt='ponsel list'/>
 
-get recommendations
-<img src='img/get_recs.png' alt='recommendations'/>
+get recommendations saw
+<img src='img/get_saw.png' alt='recommendations saw'/>
 
-ref:
-https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+get recommendations wp
+<img src='img/get_wp.png' alt='recommendations wp'/>
 
 ### TUGAS UAS
-Implementasikan model yang sudah anda buat ke dalam web api dengan http method `POST`, contoh implemantasinya dapat dilihat pada repositori ini untuk api recommendation, 
+Implementasikan model yang sudah anda buat ke dalam web api dengan http method `POST`
 
-contoh body request (bobot) :
+INPUT:
+{
+    "harga": 1, 
+    "kualitas_kamera": 2, 
+    "kapasitas_baterai": 5, 
+    "kinerja": 3, 
+    "ukuran_layar": 4
+}
 
-    { 
-    	"kriteria_1": 1,
-    	 "kriteria_2": 2, 
-    	 "kriteria_3": 5
-    	 }
+OUTPUT (diurutkan / sort dari yang terbesar ke yang terkecil):
 
-contoh output (diurutkan / sort dari yang terbesar ke yang terkecil):
+post recommendations saw
+<img src='img/post_saw.png' alt='recommendations saw'/>
 
-    {
-    	"alternatif_1": 30.0,
-    	"alternatif_2": 27.5,
-    	"alternatif_3": 25.5,
-    	"alternatif_4": 20.0
-    	}
-
+post recommendations wp
+<img src='img/post_wp.png' alt='recommendations wp'/>
