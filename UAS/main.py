@@ -6,7 +6,6 @@ from models import Ponsel as PonselModel
 from engine import engine
 from sqlalchemy import select
 from sqlalchemy.orm import Session
-from tabulate import tabulate
 
 session = Session(engine)
 
