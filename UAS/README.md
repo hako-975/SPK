@@ -1,5 +1,9 @@
 # UAS spk_web
 
+## Install venv
+
+    virtualenv venv
+
 ## Install requirements
 
     pip install -r requirements.txt
